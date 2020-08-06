@@ -8,7 +8,7 @@
 <body>
 <div>
     <table style="margin-left:40%;">
-        <tr th:each="employee: ${employees}">
+        <tr th:each="employee: ${todoitems}">
             <td th:text= "${employee.id}"></td>
             <td th:text="${employee.name}"></td>
             <td th:text="${employee.age}"></td>

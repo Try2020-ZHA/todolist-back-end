@@ -1,18 +1,12 @@
-DROP TABLE IF EXISTS employee;
-DROP TABLE IF EXISTS company;
-CREATE TABLE employee (
+DROP TABLE IF EXISTS todoitem;
+CREATE TABLE todoitem (
   id INT AUTO_INCREMENT  PRIMARY KEY,
-  name VARCHAR(100) NOT NULL,
-  age INT NOT NULL,
-  gender VARCHAR(10) DEFAULT NULL
+  content VARCHAR(100) NOT NULL,
+  status tinyint(1) NOT NULL
 );
-INSERT INTO employee (name, age, gender) VALUES
- ('User1','54','male'),
- ('User2','82','female'),
- ('User3','69','female'),
- ('User4','41','male'),
-  ('User5','54','male'),
- ('User6','82','female'),
- ('User7','69','female'),
- ('User8','41','male'),
-  ('User9','54','male');
+INSERT INTO todoitem (id, content, status) VALUES
+ ('1','gdfgd','1'),
+ ('2','8gdg2','1'),
+ ('3','6df9','1'),
+ ('4','4gdfg1','1'),
+  ('5','gdfdg','0')
