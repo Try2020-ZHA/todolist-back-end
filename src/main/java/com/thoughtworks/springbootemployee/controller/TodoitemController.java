@@ -8,8 +8,8 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
+@CrossOrigin("*")
 public class TodoitemController {
-
     @Resource
     TodoitemService todoitemService;
 
