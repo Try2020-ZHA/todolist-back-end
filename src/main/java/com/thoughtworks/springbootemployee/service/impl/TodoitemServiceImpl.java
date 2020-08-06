@@ -29,6 +29,7 @@ private TodoitemRepository todoitemRepository;
     @Override
     public void updateTodoitem(int id, Todoitem todoitem) {
         todoitem.setId(id);
+        todoitem.setStatus(!todoitem.isStatus());
         todoitemRepository.findById(id).orElseThrow(TodoitemNotFoundException::new);
         this.todoitemRepository.save(todoitem);
     }
